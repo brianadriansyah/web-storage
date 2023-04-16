@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form JS</title>
+</head>
+<script src="script.js" defer></script>
+
+<body>
+    <form style="display: flex; flex-direction: column; width: 500px;" id="form-data">
+        <label for="firstName">Nama Depan</label>
+        <input type="text" placeholder="Nama Depan" id="firstName" required><br>
+        <label for="lastName">Nama Belakang</label>
+        <input type="text" placeholder="Nama Belakang" id="lastName" required><br>
+        <label for="gender">Jenis Kelamin</label>
+        <select id="gender" required>
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+        </select> <br>
+
+        <label for="address">Alamat</label>
+        <textarea id="address" required></textarea> <br>
+
+        <label for="storage">Penyimpanan</label>
+        <select id="storage" name="storage">
+            <option value="storage">--Pilih Penyimpanan--</option>
+            <option value="session">Session</option>
+            <option value="local">Local</option>
+            <option value="cookie">Cookie</option>
+        </select><br><br>
+
+    <button type="submit" id="submitButton" onclick="saveData()">Simpan Data</button>
+    </form>
+
+    <div id="output"></div>
+    <button id="showNewDataBtn" onclick="displayData(1)">Tampilkan Data Baru</button>
+    <button id="showAllDataBtn" onclick="displayData(2)">Tampilkan Semua Data</button>
+
+</body>
+
+</html>
