@@ -51,3 +51,5 @@ function displayData(buttonType) {
       document.getElementById("output").innerHTML = "Data Lama: " + oldData + "<br>Data Baru: " + JSON.stringify(data);
     }
   }
+
+  // mohon maaf jika pengerjaan kurang maksimal, karena masih kurang memahami materi
